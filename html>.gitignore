@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATM Machine</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <style>
+
+        *{
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+.container{
+
+    height: 1000px;
+
+    display: grid;
+
+    place-items: center;
+
+    /* background-color: cornsilk; */
+
+}
+
+        .atm{
+
+            width: 500px;
+
+            height: 500px;
+
+            box-shadow: 10px -10px 25px  rgb(143, 64, 248, 0.5),-10px 10px 25px  rgba(39, 170, 231, 0.5);
+
+            /* background-color: bisque; */
+
+        }
+
+        .atm-head{
+
+            width: 100%;
+
+            height: 30%;
+
+            /* background-color: #7f8c8d; */
+
+            box-shadow: 0px 4px 7px rgb(0 0 0 / 33%), 0px 8px 16px rgb(0 0 0 / 47%);
+
+            
+
+        }
+
+        .atm-body{
+
+            width: 100%;
+
+            height: 70%;
+
+            display: flex;
+
+            background-color: #95a5a659;
+
+        }
+
+        .button,.opt{
+
+             width: 50%;
+
+             transform: translate(5px,50px);
+
+             height: 80%;
+
+          
+
+             
+
+
+
+        }
+
+         .btn{
+
+            box-shadow: 0px 4px 7px rgb(0 0 0 / 33%), 0px 8px 16px rgb(0 0 0 / 47%);
+
+            padding: 15px 25px;
+
+            margin: 5px;
+
+        }
+
+        .opt{
+
+            transform: translate(-2px,50px);
+
+            
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+       <h3>ATM Machine</h3>
+
+       <div class="container">
+
+           <div class="row">
+
+               <div class="col">
+
+                   <div class="atm">
+
+                       <div class="atm-head">
+
+                                <form action="">
+
+                                    <input type="text" class="form-control w-100 text-center py-4   "  id="pin"  placeholder="Add pin here" style="transform: translateY(5px);">
+
+                                    <input type="text" class="form-control w-100" id="option" placeholder="Data.....">
+
+                                    <input type="text" class="form-control w-100" id="result"  placeholder="result" disabled>
+
+                                </form>
+
+                       </div>
+
+                       <div class="atm-body">
+
+                           <div class="button">
+
+                                <button  role="button" value="1"  class="btn btn-light">1</button>
+
+                                <button  role="button" value="2"  class="btn btn-light">2</button>
+
+                                <button  role="button" value="3"  class="btn btn-light">3</button>
+
+                                <button  role="button" value="4"  class="btn btn-light">4</button>
+
+                                <button  role="button" value="5"  class="btn btn-light">5</button>
+
+                                <button  role="button" value="6"  class="btn btn-light">6</button>
+
+                                <button  role="button" value="7"  class="btn btn-light">7</button>
+
+                                <button  role="button" value="8"  class="btn btn-light">8</button>
+
+                                <button  role="button" value="9"  class="btn btn-light">9</button>
+
+                                <button  role="button"  onclick="log()"  class="btn btn-light">Yes</button>
+
+                                <button  role="button" value="0"  class="btn btn-light mr-auto" >0</button>
+
+                                <button  role="button" value="0" id="delete"  class="btn btn-light mr-auto" >X</button>
+
+
+
+
+
+                           </div>
+
+                           <div class="opt">
+
+                               <button href="" role="button" id="balance" class="btn btn-light w-100 text-center d-block">Check Balance</button>
+
+                               <button href="" role="button" id="Add" class="btn btn-light w-100 text-center d-block">Add Balance</button>
+
+                               <button href="" role="button" id="Deposit" class="btn btn-light w-100 text-center d-block">depoit</button>
+
+                               <button href="" role="button" id="Exit" class="btn btn-light w-100 text-center d-block">Exit</button>
+
+                           </div>
+
+                       </div>
+
+                   </div>
+
+                    
+
+               </div>
+
+           </div>
+
+       </div>
+
+</body>
+
+</html>
